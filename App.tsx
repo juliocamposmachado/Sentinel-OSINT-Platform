@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard';
 import Collection from './pages/Collection';
 import Cases from './pages/Cases';
 import Audit from './pages/Audit';
+import Reports from './pages/Reports';
 import SplashScreen from './components/SplashScreen';
 import Footer from './components/Footer';
 
@@ -42,7 +43,7 @@ const App: React.FC = () => {
                 <Route path="/collection" element={<Collection />} />
                 <Route path="/cases" element={<Cases />} />
                 <Route path="/audit" element={<Audit />} />
-                <Route path="/reports" element={<div className="p-10 text-center text-slate-500">Módulo de Relatórios em Desenvolvimento</div>} />
+                <Route path="/reports" element={<Reports />} />
                 {/* Redireciona qualquer rota desconhecida para a home */}
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
