@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LayoutDashboard, Search, FileText, ShieldAlert, Archive, Settings, Lock } from 'lucide-react';
+import { LayoutDashboard, Search, FileText, ShieldAlert, Archive, Settings, Lock, Briefcase } from 'lucide-react';
 
 const Sidebar: React.FC = () => {
   const location = useLocation();
@@ -9,6 +9,7 @@ const Sidebar: React.FC = () => {
     { path: '/', icon: LayoutDashboard, label: 'Dashboard Operacional' },
     { path: '/collection', icon: Search, label: 'Coleta OSINT' },
     { path: '/cases', icon: FileText, label: 'Casos & Evidências' },
+    { path: '/tools', icon: Briefcase, label: 'Ferramentas Externas' },
     { path: '/audit', icon: ShieldAlert, label: 'Auditoria & Logs' },
     { path: '/reports', icon: Archive, label: 'Relatórios' },
   ];

@@ -18,21 +18,21 @@ Fornecer aos órgãos de inteligência uma interface unificada para monitorar am
 
 ## 🏛️ Contexto Governamental e Valor de Mercado
 
-Este projeto foi desenhado como **Prova de Conceito (PoC)** para atender aos rigorosos requisitos técnicos de licitações de alto nível, espelhando-se na recente aquisição estratégica do **Ministério da Justiça e Segurança Pública (MJSP)**.
+Este projeto foi desenhado como **Prova de Conceito (PoC)** alinhada à recente aquisição estratégica do **Ministério da Justiça e Segurança Pública (MJSP)**, demonstrando viabilidade técnica e econômica.
 
-**Dados da Licitação de Referência (SENASP/MJSP):**
+### Detalhamento do Contrato de Referência (SENASP/MJSP)
 
-*   **Valor do Investimento:** **R$ 64,6 milhões**.
-*   **Escopo:** Aquisição de sistema para localização de integrantes de organizações criminosas (como CV e PCC) e monitoramento de passos na internet (redes sociais e surface web).
-*   **Capacidade Técnica Exigida:**
-    *   Taxa de acerto prevista de **99% em imagens estáticas** (Atendido via Gemini Vision/Imagen).
-    *   Armazenamento e análise de até **50 bilhões de fotos** (Arquitetura Escalável em Nuvem).
-    *   81 soluções para reconhecimento básico e 186 soluções avançadas.
-*   **Justificativa Oficial:** Combate ao cenário de instabilidade e crises de segurança pública, agravado pela disputa de facções transnacionais pelo controle do tráfico.
+O Ministério da Justiça e Segurança Pública (MJSP) vai pagar **R$ 64,6 milhões** para adquirir um sistema destinado a localizar criminosos das facções Comando Vermelho (CV) e Primeiro Comando da Capital (PCC) em redes sociais e monitorar seus passos na internet. A taxa de acerto prevista é de **99% em imagens estáticas**. Ao todo, a ferramenta permite a análise e o armazenamento de até **50 bilhões de fotos**.
 
-> *"A demanda [...] ressalta a necessidade de adquirir uma solução tecnológica capaz de identificar padrões fenotípicos e outras imagens, a partir de fontes abertas, utilizando imagens disponíveis ao público em plataformas de redes sociais e sites na internet."* — Diretoria de Operações Integradas e de Inteligência (Diop).
+A compra, realizada pela Secretaria Nacional de Segurança Pública (Senasp), inclui **81 soluções para reconhecimento de padrões em bases abertas básicas e 186 soluções avançadas**.
 
-🔗 **Fonte de Referência:** [Matéria Metrópoles - MJSP investe R$ 64,6 milhões em sistema de monitoramento](https://www.facebook.com/metropolesdf/posts/pfbid02C6b43J73ruCaEGMjs8Mxxk6Pvb9so8GYRATPku4TkyyT6C3yEdQTGvjTbQnBXtp7l)
+**Justificativa Oficial:**
+No estudo técnico elaborado para embasar a licitação, a Senasp argumenta que:
+> *“O atual cenário de instabilidades e crises de segurança pública, que se agrava pela ação de grupos criminosos que disputam o controle do tráfico de drogas e armas nos grandes centros urbanos, com alcance além das fronteiras nacionais, somados a outros fatores, contribuem para o aumento da criminalidade de uma forma geral”.*
+
+O documento afirma ainda que a demanda, apresentada pela Diretoria de Operações Integradas e de Inteligência (Diop), *“ressalta a necessidade de adquirir uma solução tecnológica capaz de identificar padrões fenotípicos e outras imagens, a partir de fontes abertas, utilizando imagens disponíveis ao público em plataformas de redes sociais e sites na internet”*.
+
+🔗 **Fonte da Informação:** [Matéria Metrópoles / Paulo Cappelli](https://www.facebook.com/metropolesdf/posts/pfbid02C6b43J73ruCaEGMjs8Mxxk6Pvb9so8GYRATPku4TkyyT6C3yEdQTGvjTbQnBXtp7l)
 
 ---
 
@@ -84,7 +84,7 @@ Integração com a API **Google Gemini 2.5 Flash** para processamento de evidên
 
 O sistema utiliza uma stack moderna, performática e segura:
 
-*   **Frontend:** React 19 (via Vite/Next architecture approach)
+*   **Frontend:** React 19 (via Vite)
 *   **Linguagem:** TypeScript (Tipagem estrita para robustez do código)
 *   **Estilização:** Tailwind CSS (Design System responsivo e "Dark Mode" nativo para operações noturnas)
 *   **Inteligência Artificial:** SDK `@google/genai` (Google Gemini 2.5 Flash)
@@ -124,13 +124,11 @@ O sistema utiliza uma stack moderna, performática e segura:
 
 3.  **Executar em modo de desenvolvimento:**
     ```bash
-    npm start
-    # ou
     npm run dev
     ```
 
 4.  **Acessar:**
-    Abra o navegador em `http://localhost:3000` (ou a porta indicada).
+    Abra o navegador em `http://localhost:5173` (ou a porta indicada pelo Vite).
 
 ---
 

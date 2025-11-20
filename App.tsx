@@ -7,6 +7,7 @@ import Collection from './pages/Collection';
 import Cases from './pages/Cases';
 import Audit from './pages/Audit';
 import Reports from './pages/Reports';
+import Tools from './pages/Tools';
 import SplashScreen from './components/SplashScreen';
 import Footer from './components/Footer';
 
@@ -42,6 +43,7 @@ const App: React.FC = () => {
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/collection" element={<Collection />} />
                 <Route path="/cases" element={<Cases />} />
+                <Route path="/tools" element={<Tools />} />
                 <Route path="/audit" element={<Audit />} />
                 <Route path="/reports" element={<Reports />} />
                 {/* Redireciona qualquer rota desconhecida para a home */}
