@@ -42,10 +42,14 @@ const App: React.FC = () => {
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/collection" element={<Collection />} />
-                <Route path="/cases" element={<Cases />} />
+                
+                {/* Rotas com Wildcard (*) para suportar os submenus da Sidebar */}
+                <Route path="/cases/*" element={<Cases />} />
+                <Route path="/audit/*" element={<Audit />} />
+                
                 <Route path="/tools" element={<Tools />} />
-                <Route path="/audit" element={<Audit />} />
                 <Route path="/reports" element={<Reports />} />
+                
                 {/* Redireciona qualquer rota desconhecida para a home */}
                 <Route path="*" element={<Navigate to="/" replace />} />
               </Routes>
