@@ -1,0 +1,5 @@
+{
+  "name": "Sentinel OSINT Platform",
+  "description": "Plataforma de Inteligência em Fontes Abertas (OSINT) para segurança pública, com conformidade LGPD, auditoria rigorosa e análise assistida por IA (Gemini).",
+  "requestFramePermissions": []
+}
