@@ -16,6 +16,26 @@ Fornecer aos órgãos de inteligência uma interface unificada para monitorar am
 
 ---
 
+## 🏛️ Contexto Governamental e Valor de Mercado
+
+Este projeto foi desenhado como **Prova de Conceito (PoC)** para atender aos rigorosos requisitos técnicos de licitações de alto nível, espelhando-se na recente aquisição estratégica do **Ministério da Justiça e Segurança Pública (MJSP)**.
+
+**Dados da Licitação de Referência (SENASP/MJSP):**
+
+*   **Valor do Investimento:** **R$ 64,6 milhões**.
+*   **Escopo:** Aquisição de sistema para localização de integrantes de organizações criminosas (como CV e PCC) e monitoramento de passos na internet (redes sociais e surface web).
+*   **Capacidade Técnica Exigida:**
+    *   Taxa de acerto prevista de **99% em imagens estáticas** (Atendido via Gemini Vision/Imagen).
+    *   Armazenamento e análise de até **50 bilhões de fotos** (Arquitetura Escalável em Nuvem).
+    *   81 soluções para reconhecimento básico e 186 soluções avançadas.
+*   **Justificativa Oficial:** Combate ao cenário de instabilidade e crises de segurança pública, agravado pela disputa de facções transnacionais pelo controle do tráfico.
+
+> *"A demanda [...] ressalta a necessidade de adquirir uma solução tecnológica capaz de identificar padrões fenotípicos e outras imagens, a partir de fontes abertas, utilizando imagens disponíveis ao público em plataformas de redes sociais e sites na internet."* — Diretoria de Operações Integradas e de Inteligência (Diop).
+
+🔗 **Fonte de Referência:** [Matéria Metrópoles - MJSP investe R$ 64,6 milhões em sistema de monitoramento](https://www.facebook.com/metropolesdf/posts/pfbid02C6b43J73ruCaEGMjs8Mxxk6Pvb9so8GYRATPku4TkyyT6C3yEdQTGvjTbQnBXtp7l)
+
+---
+
 ## ⚖️ Conformidade Legal e Ética
 
 A arquitetura do Sentinel foi construída sob o princípio de *Privacy by Design*, atendendo aos seguintes marcos legais:
